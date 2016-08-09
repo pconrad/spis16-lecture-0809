@@ -34,18 +34,25 @@ def drawHouse(t):
     t.right(90)
     t.forward(math.sqrt(2.0) * 50)
 
+    # reset turtle to bottom right, facing east
+
+    t.right(45)
+    t.forward(50)
+    t.left(90)
     
 
 def drawStuff(t):
     ''' draw some example houses '''
     
     drawHouse(t)
-    
+
+    drawHouse(t)
 
 
 if __name__ == "__main__":
     x = raw_input("Press return when ready to see the turtle")
     fred = turtle.Turtle()
+    
     x = raw_input("Press return when ready to draw")
     drawStuff(fred)
     x = raw_input("Press return when done")
